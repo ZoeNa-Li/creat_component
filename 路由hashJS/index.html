@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS原生路由</title>
+</head>
+<body>
+	<ul>
+    <li><a href="#/"></a></li>
+    <li><a href="#/home">主页</a></li>
+    <li><a href="#/about">详情页</a></li>
+</ul>
+</body>
+<script type="text/javascript" src="router.js"></script>
+<script type="text/javascript">
+	Router.route('/',function(){
+		console.log('这是主页')
+	})
+		Router.route('/home',function(){
+		console.log('这是home')
+	})
+			Router.route('/about',function(){
+		console.log('这是about')
+	})
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏自适应布局</title>
+</head>
+<style type="text/css">
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.main .in{
+    margin: 0 210px;
+    background-color: pink;
+    height: 100%;
+}
+.left,.right{
+    height: 100%;
+    width: 200px;
+    float: left;
+   
+}
+.left{
+    margin-left: -100%;
+    /*-100%大小为整个浏览器的大小，因此left可以从浏览器最左侧开始*/
+    /*若将此盒子设为-200px则将被right覆盖*/
+     background-color: blue;
+}
+.right{
+    margin-left: -200px;
+     background-color: green;
+}
+</style>
+<body>
+<body>
+<div class="main">
+    <div class="in"></div>
+</div>
+<div class="left"></div>
+<div class="right"></div>
+</body>
+	
+</body>
+</html>
